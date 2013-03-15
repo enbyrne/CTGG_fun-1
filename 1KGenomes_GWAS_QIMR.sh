@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#This script is for performing GWAS using the QIMR GWAS dosage data stored on /hpscratch . Note that PLINK can also be used to perform GWAS with dosage data.
+#However many of PLINK's normal functions don't work with dosage scores and this script provides a framework to add code in an R script to do other functions.
+#The original reason was for writing the script was to look at SNP x sex interaction.
+#This code will write R scripts for each chromosomal segment. These scripts should be submitted using Guo-bo Chen's Rsub.R script also located in the CTGG github.
+
+
 #Here you can list your home directory
 export GR=~/Jack_anxiety/1000k/
 
